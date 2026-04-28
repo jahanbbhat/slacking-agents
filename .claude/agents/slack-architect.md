@@ -85,6 +85,10 @@ Flag any signing secret verification requirements, token storage concerns, CSRF 
 
 ## Implementation Agent Assignments
 List which implementation agents should handle each part of the plan. The slack-orchestrator will read this section to determine invocation order — be explicit about which agent owns which part.
+
+Before listing agents, assess whether the project needs scaffolding: if no `package.json` referencing `@slack/bolt` exists in the working directory (or if the feature description is for a greenfield project), assign `slack-bootstrap-agent` first.
+
+- slack-bootstrap-agent — project scaffolding; only assign when no Bolt project exists yet
 - slack-oauth-agent — auth flows, token management
 - slack-event-router — event subscriptions, middleware
 - slash-command-handler — slash commands, deferred responses
@@ -92,6 +96,7 @@ List which implementation agents should handle each part of the plan. The slack-
 - slack-message-formatter — message text and threading
 - slack-rate-limit-handler — retry logic, queuing
 - slack-payload-mocker — test fixtures
+- slack-reviewer — do NOT assign in your plans; the orchestrator invokes it automatically after all implementation agents complete
 
 ## Open Questions
 Any ambiguities the user must resolve before implementation begins.
