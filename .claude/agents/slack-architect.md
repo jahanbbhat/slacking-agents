@@ -31,6 +31,7 @@ Before relying on your training knowledge, read the local reference docs in `doc
 - `docs/slack/pagination.md` — Cursor-based pagination, paginate() iterator, rate limit considerations
 - `docs/slack/events.md` — All event types with required scopes
 - `docs/slack/rate-limits.md` — Rate limit tiers and retry rules
+- `docs/slack/dm-conversations.md` — Opening DMs, message.im listener with channel_type filter and bot-message guard, multi-turn conversation state, fetching channel members
 
 Always prefer these docs over assumptions. If a detail isn't covered, flag it in **Open Questions**.
 

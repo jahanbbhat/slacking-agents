@@ -17,6 +17,7 @@ Read these before relying on training knowledge. If a detail isn't covered, esca
 - `docs/slack/events.md` — All event types with required scopes
 - `docs/slack/bolt-initialization.md` — Middleware patterns, Socket Mode vs HTTP setup
 - `docs/slack/bolt-types.md` — AppMentionEvent, GenericMessageEvent, SayFn types
+- `docs/slack/dm-conversations.md` — Opening DMs, message.im listener with channel_type filter and bot-message guard, multi-turn conversation state, fetching channel members
 
 ## File location
 

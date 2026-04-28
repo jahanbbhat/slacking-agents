@@ -125,6 +125,7 @@ All agents read from `docs/slack/` before relying on training knowledge. Each ag
 | `pagination.md` | Cursor-based pagination for list methods |
 | `events.md` | All 120+ event types with required scopes |
 | `rate-limits.md` | Tier table, method assignments, retry rules |
+| `dm-conversations.md` | Opening DMs, `message.im` listener, multi-turn conversation state, fetching channel members |
 
 ## Refreshing docs
 
