@@ -24,3 +24,5 @@
   are correctness issues; the rest are efficiency/reliability issues.
 
 Make sure the intent of the files in our memory folder is replicated to other files since memories shouldn't be shared with others.
+
+Make sure agents have references to relevant documentation and code examples.
